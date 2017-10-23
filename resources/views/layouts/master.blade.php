@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
-@include("layouts.head")
+<head>
+    <title>@yield("title")</title>
+    @section("head")
+        @include("partials.head")
+    @show
+</head>
 <body>
-@include("layouts.nav")
+@include("partials.nav")
 <div style="padding-top: 70px;"></div>
 <div class="container">
     @yield("content")
