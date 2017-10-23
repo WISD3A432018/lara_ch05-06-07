@@ -21,12 +21,12 @@
             國文：60
         </p>
         @endif
-        @if(is_null($subject)||$subject=="chinese")
+        @if(is_null($subject)||$subject=="english")
         <p>
             英文：60
         </p>
         @endif
-        @if(is_null($subject)||$subject=="chinese")
+        @if(is_null($subject)||$subject=="math")
         <p>
             數學：60
         </p>

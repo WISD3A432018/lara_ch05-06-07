@@ -54,7 +54,8 @@ Route::pattern('student_no','s[0-9]{10}');
 //        }])->where(['subject' => '(chinese|english|math)']);
 //});
 
-Route::get('/', 'HomeController@indexc');
+Route::get('/', 'HomeController@index');
+Route::get('/r', 'HomeController@getIndex');
 
 Route::group(['prefix' => 'student'],function(){
     Route::get('{student_no}',[
